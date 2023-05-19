@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "@rocketseat/eslint-config/react"
+  ],
+  "semi": [
+    "error"
+  ],
+  "semi-style": [
+    "error",
+    "last"
+  ]
+}
