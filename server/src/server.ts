@@ -1,12 +1,10 @@
 import fastify from 'fastify';
 import { PrismaClient } from '@prisma/client';
+import { memoriesRoutes } from './routes/memories.routes';
 
 const app = fastify();
-const prisma = new PrismaClient();
 
-app.get('/hello', () => {
-  return 'hello world!';
-});
+app.register(memoriesRoutes);
 
 app
   .listen({
